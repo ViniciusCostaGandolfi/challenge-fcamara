@@ -31,7 +31,7 @@ challenge/
 └── README.md
 ```
 
-## ⚡ Como Executar
+## Como Executar
 ### Pré-requisitos:
 Certifique-se de ter **Java 11** e **Maven** instalados:
 ```sh
@@ -39,60 +39,53 @@ java -version
 mvn -version
 ```
 
-### 1️⃣ Clonar o Repositório
+
+### 1️ Clonar o Repositório
 ```sh
 git clone https://github.com/seu-usuario/challenge.git
 cd challenge
 ```
 
-### 2️⃣ Compilar e Executar
+### 2️ Compilar e Executar
 ```sh
 mvn clean compile
 mvn exec:java -Dexec.mainClass="com.fmcamara.App"
 ```
 
-### 3️⃣ Rodar Testes
+Alternativamente você poderia utilizar o Docker para ver o projeto:
+
+``` sh
+docker build -t challenge-tests .
+docker run --rm challenge-tests
+
+```
+
+### 3️ Rodar Testes
 ```sh
 mvn test
 ```
 
-### 4️⃣ Gerar e Rodar o JAR
+### 4️ Gerar e Rodar o JAR
 ```sh
 mvn package
 java -jar target/challenge-1.0-SNAPSHOT.jar
 ```
 
-## 🛠 Funcionalidades
-### 1️⃣ Cálculo de Soma
-O programa calcula a soma dos números de 1 até 13:
-```java
-int INDICE = 13, SOMA = 0, K = 0;
-while (K < INDICE) {
-    K = K + 1;
-    SOMA = SOMA + K;
-}
-```
-Saída esperada:
-```
-91
-```
+## Requisitos do Challenge
+### 1️ Cálculo de Soma
+O programa calcula a soma dos números de 1 até 13
 
-### 2️⃣ Sequência de Fibonacci
+### 2️ Sequência de Fibonacci
 O programa verifica se um número pertence à sequência de Fibonacci.
 
-Exemplo:
-```sh
-Entrada: 21
-Saída: "O número 21 pertence à sequência de Fibonacci."
-```
 
-### 3️⃣ Análise de Faturamento
+### 3️ Análise de Faturamento
 O programa analisa um vetor de faturamento diário e retorna:
 - Menor faturamento do mês.
 - Maior faturamento do mês.
 - Quantidade de dias em que o faturamento foi superior à média mensal.
 
-### 4️⃣ Percentual de Faturamento por Estado
+### 4️ Percentual de Faturamento por Estado
 Valores de faturamento mensal:
 - **SP** – R$67.836,43
 - **RJ** – R$36.678,66
@@ -102,27 +95,10 @@ Valores de faturamento mensal:
 
 O programa calcula o percentual de cada estado em relação ao total.
 
-Saída esperada:
-```
-SP representa 37.53% do faturamento total
-RJ representa 20.29% do faturamento total
-MG representa 16.17% do faturamento total
-ES representa 15.03% do faturamento total
-Outros representa 10.98% do faturamento total
-```
-
-### 5️⃣ Inversão de String
+### 5️ Inversão de String
 O programa inverte uma string sem usar funções prontas:
 
-Entrada:
-```sh
-"Java Spring Boot"
-```
-Saída esperada:
-```sh
-"tooB gnirpS avaJ"
-```
 
-## 📄 Licença
+## Licença
 Este projeto é open-source e está disponível sob a licença [MIT](LICENSE).
 
