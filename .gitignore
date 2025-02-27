@@ -1,0 +1,48 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+
+### Maven ###
+log/
+target/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+
+### OS-Specific ###
+.DS_Store
+Thumbs.db
+
+### Logs ###
+*.log
+
+### Compiled class files ###
+*.class
+
+### Java JAR files ###
+*.jar
+*.war
+*.ear
+
+### Test Reports ###
+surefire-reports/
+
+### Temporary files ###
+*.swp
+*.swo
+*~
+
+### IDE-Specific Files ###
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+### Misc ###
+node_modules/
+npm-debug.log
+yarn-error.log
+
